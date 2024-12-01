@@ -1,0 +1,64 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+/* Setup Container */
+/* Inline */
+.container{
+
+}
+
+#form{
+    margin: 0 auto;
+    width: 700px;
+    padding: 15px 30px ;
+    background-color:lavender;
+}
+#form > .form__title{
+    font-size: 115%;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.row > .row__item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1 1 auto;
+}
+.row__item input{
+    border-radius: 0.4rem;
+    width: 100%;
+    padding: 3px;
+    border-width: 1.5px;
+    border-color: darkgray;
+    
+}
+.row__item .row__item--email{
+    display: flex; 
+}
+.row__item--email > span{
+    font-size: 80%;
+    border-radius: 0.4rem;
+    border: 1.5px solid gray;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 5px 7px;
+}
+.row__item--email > input{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 0;;
+}
+
+/* Dùng chung css */
+.mb-4{
+    margin-bottom: 1rem ;
+}

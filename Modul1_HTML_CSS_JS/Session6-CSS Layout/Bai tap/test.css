@@ -1,0 +1,42 @@
+/* Cài đặt chung */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử tự xuống hàng */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+  }
+  
+  .item {
+    background-color: lightblue;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  /* Màn hình lớn hơn hoặc bằng 1200px */
+  @media (min-width: 1200px) {
+    .item {
+      flex: 1 1 calc(25% - 20px); /* 4 phần tử trên một hàng */
+    }
+  }
+  
+  /* Màn hình từ 992px đến nhỏ hơn 1200px */
+  @media (max-width: 1199px) {
+    .item {
+      flex: 1 1 calc(33.33% - 20px); /* 3 phần tử trên một hàng */
+    }
+  }
+  
+  /* Màn hình từ 591px đến nhỏ hơn 992px */
+  @media (max-width: 991px) {
+    .item {
+      flex: 1 1 calc(50% - 20px); /* 2 phần tử trên một hàng */
+    }
+  }
+  
+  /* Màn hình nhỏ hơn hoặc bằng 590px */
+  @media (max-width: 590px) {
+    .item {
+      flex: 1 1 100%; /* 1 phần tử trên một hàng */
+    }
+  }!

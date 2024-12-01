@@ -1,0 +1,47 @@
+img{
+    width: 200px;
+    float:left;
+}
+
+.container{
+    width: 500px;
+    height: 1000px;
+    background-color: bisque;
+    padding: 15px 10px;
+    position:static;
+    margin: 0 auto;
+}
+div[class^=box]{
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
+    /* background-color: white; */
+    text-align: center;
+    align-content: center;
+    border: 1px solid white;
+    margin-bottom: 5px;
+    /* position: static; */
+}
+.box1{
+    background-color: red;
+    position: fixed;
+    top: 200px;
+    left: 100px;
+}
+.box2{
+    background-color: green;
+    position: fixed;
+    top: 200px;
+    right: 100px;
+}
+.box3{
+    background-color: yellow;
+    /* position: fixed;
+    top: 100px;
+    right: 100px; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
