@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let namSinh = +prompt("Hãy nhập năm sinh của bạn:");
+        let namHienTai = new Date().getFullYear();
+        if( typeof namSinh === "number"){
+            let soTuoi = namHienTai - namSinh;
+            console.log("Số tuổi của bạn là:", soTuoi);
+        } 
+        else{
+            alert("Giá trị không hợp lệ");
+            
+        }
+    </script>
+</body>
+
+</html>
