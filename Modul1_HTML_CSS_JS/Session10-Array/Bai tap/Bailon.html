@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let todoList = ["Go to school at 7am", "Red book at 12 am"];
+        let check = true;
+        while (check) {
+            let choice = prompt("Hãy chọn C/R/U/D/E: ").toUpperCase();
+            switch (choice) {
+                case "C": {
+                    let newTodo = prompt("Nhập công việc mới: ")
+                    todoList.push(newTodo);
+                    console.log("Danh sách công việc sau khi được thêm là: ");
+                    for (let i = 0; i < todoList.length; i++) {
+                        console.log(`${i + 1} `, todoList[i]);
+                    }
+                    break;
+                }
+                case "R": {
+                    console.log("Danh sách công việc hiện tại: ");
+                    for (let i = 0; i < todoList.length; i++) {
+                        console.log(`${i + 1} `, todoList[i]);
+                    }
+                    break;
+                }
+                case "U": {
+                    let indexUpdate = Number(prompt("Hãy nhập vị trí bạn muốn cập nhật: "));
+                    let listUpdate = prompt("Hãy nhập công việc ban muốn cập nhật: ");
+                    todoList[indexUpdate - 1] = listUpdate;
+                    console.log("Danh sách công việc sau khi được update là: ");
+                    for (let i = 0; i < todoList.length; i++) {
+                        console.log(`${i + 1} `, todoList[i]);
+                    }
+                    break;
+                }
+                case "D": {
+                    console.log("Danh sách công việc hiện tại: ");
+                    for (let i = 0; i < todoList.length; i++) {
+                        console.log(`${i + 1} `, todoList[i]);
+                    }
+                    let indexDelete = Number(prompt("Hãy nhập vị trí bạn muốn xóa: "));
+                    todoList.splice(indexDelete - 1, 1);
+                    console.log("Danh sách công việc sau khi xóa là: ");
+                    for (let i = 0; i < todoList.length; i++) {
+                        console.log(`${i + 1} `, todoList[i]);
+                    }
+                    break;
+                }
+                case "E": {
+                    check = false;
+                    console.log("Cảm ơn bạn đã sử dụng chương trình. Xin hẹn gặp lại");
+                    break;
+                }
+                default: {
+                    console.log("Lựa chọn của bạn không hợp lệ. Vui lòng thử lại!");
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

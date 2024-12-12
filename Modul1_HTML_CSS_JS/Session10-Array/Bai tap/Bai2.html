@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let arr = [1,5,"Monday",true,10.5,20.3];
+        let type = prompt("Hãy nhập vào giá trị bất kỳ: ");
+        let check = 0;
+        for (let i = 0; i < arr.length; i++){
+            if (arr[i] == type){
+                console.log(`Vị trí của phần tử ${arr[i]} là: ${i+1}`);
+                check = 1;
+            }
+        }
+        if (check == 0){
+            console.log("Phần tử không tồn tại");
+            
+        }
+    </script>
+</body>
+</html>
