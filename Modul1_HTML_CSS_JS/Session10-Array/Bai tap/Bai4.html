@@ -12,24 +12,24 @@
     <script>
         let a = Number(prompt("Hãy nhập số nguyên dương a: "));
         let b = Number(prompt("Hãy nhập số nguyên dương b: "));
-        let modA = [0];
+        let modA = [];
         let modB = [];
-        console.log("Mảng A gồm các phần tử: ");
         for (let i = 1; i <= a; i++){
             if (i % b == 0){
                 modA.push(i);
             }
-            console.log(modA[i]);
-            
         }
-        // console.log("Mảng B gồm các phần tử: ");
-        // for (let y = 1; y < b; y++){
-        //     if (y % a == 0){
-        //         modB.push(y);
-        //     }
-        //     console.log(modB[y] + " ");
-        // }
+        for (let y = 1; y <= b; y++){
+            if (y % a == 0){
+                modB.push(y);
+            }
+        }
+        console.log("Số nguyên dương a chia hết cho b là: ", modA);
+        console.log("Số nguyên dương b chia hết cho a là: ", modB);
+
         
+        
+
     </script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let arr = [1,10,4,61,2,6,2,78,10,2];
+        let arr1 = [];
+        for (let i = 0; i < arr.length; i++){
+            for (let y = 0; y < arr.length; y++){
+                if (arr[i] == arr[y] && i != y){
+                    arr1.push(arr[i]);
+                    break;
+                }
+            }
+        }
+        const uniqueArray = [...new Set(arr1)]
+        console.log("Các kí tự xuất hiện ít nhất 2 lần trong mảng là: ", uniqueArray);
+        
+    </script>
+</body>
+</html>
