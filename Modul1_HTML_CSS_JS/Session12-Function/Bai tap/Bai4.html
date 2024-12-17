@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let chuoi = prompt("Hãy nhập chuỗi kí tự: ");
+        let kiTu = prompt("Hãy nhập kí tự bất kỳ: ");
+        demSoKiTu = (string, kiTu) => {
+            let dem = 0;
+            for (let i = 0; i < string.length; i++){
+                if (kiTu === string.charAt(i)){
+                    dem++;
+                }
+            }
+            return dem;
+        }
+        console.log("Kí tự vừa nhập là: ", chuoi);
+        console.log(`Kí tự ${kiTu} xuất hiện ${demSoKiTu(chuoi, kiTu)} lần. `);
+    </script>
+</body>
+</html>

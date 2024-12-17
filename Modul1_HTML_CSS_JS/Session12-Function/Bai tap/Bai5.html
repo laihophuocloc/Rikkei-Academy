@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let arr = ["Tôi tên Lộc", "Tôi tên Xuyên", "Tôi tên Tâm"];
+        let str = prompt("Hãy nhập chuỗi kí tự: ");
+        searchArray = (array, searhString) => {
+            let arraySearch = [];
+            for (let i = 0; i < array.length; i++){
+                if (array[i] === searhString){
+                    arraySearch.push(array[i]);
+                }
+            }
+            return arraySearch;
+        }
+        console.log(`Phần tử trong mảng có chứa kí tự vừa nhập là: ${searchArray(arr, str)}`);
+        
+    </script>
+</body>
+</html>

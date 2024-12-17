@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let arr = ["Tôi tên là Lộc", "Tôi là Minh", 230494, 20133];
+        let search = [];
+        timPhanTuDaiNhat = search => {
+            let x = search[0].length;
+            let y = search[0];
+            for (let i = 0; i < search.length; i++){
+                if (search[i].length > x){
+                    x = search[i].length;
+                    y = search[i];
+                }
+            }
+            return y;        
+        }
+        console.log("Phần tử có độ dài lớn nhất là: ", timPhanTuDaiNhat(arr));
+    </script>
+</body>
+</html>
